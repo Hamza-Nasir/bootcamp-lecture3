@@ -38,4 +38,4 @@ jobs:
         run: npm install -g surge
       
       - name: Deploy to Surge
-        run: npx surge ./build lecture2-hamza.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+        run: npx surge ./build reactLecture1-hamza.surge.sh --token ${{ secrets.SURGE_TOKEN }}
