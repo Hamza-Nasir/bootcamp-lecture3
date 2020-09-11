@@ -1,29 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
+
 import './App.css';
+import HelloWorld from './Hello.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload. 
-          <br/>
+// function App(props) {
+function App({name, age}) {
+  return <div>Hello from App.js!
 
-          Nice Edit Boiz
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+            <div>I LOVE U {name}, Aged: {age}</div>
+
+            <br/>
+
+            <HelloWorld name={name}></HelloWorld>
+            
+        </div>
 }
 
 export default App;
+
