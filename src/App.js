@@ -13,6 +13,15 @@ function App({name, age}) {
             <br/>
 
             <HelloWorld name={name}></HelloWorld>
+            <br/>
+
+            {name} likes:
+            <ol>
+              <li>Gaming</li>
+              <li>Chilling</li>
+              <li>Pr0gramming</li>
+            </ol>
+            
             
         </div>
 }
